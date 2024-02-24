@@ -1,0 +1,92 @@
+.pictures_part{
+    position: relative;
+    .picture{
+        float: left;
+        width: 340px;
+    }
+ & .container{
+    margin-bottom: 100px;
+    display: block;
+    background-color: antiquewhite;
+ }
+ & .bacground{
+    min-height: 340px;
+    background-image: url(../img/latest-works/soat.jpg);
+    color: #fff;
+    position: relative;
+   
+    &_name{
+     position: absolute;
+     left: 50%;
+     top: 50%;
+     transform: translate(-50%,-50%);
+    }
+    &_title{
+        margin: 0;
+        font-weight: 700;
+    }
+  &_text{
+    margin: 0;
+  }
+ }
+ .picture+.picture{
+    margin-left: 40px;
+  &:nth-child(4){
+    margin-left: 0;
+  }  
+ }
+ &_link{
+    position: absolute;
+    left: 50%;
+    top: 105%;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 40px;
+    color: #fff;
+    text-transform: uppercase;
+    transform: translateX(-50%);
+    background-color: #00887a;
+ }
+ .container{
+ @media only screen and (max-width:1100px) {
+    &{
+        width: 1020px;
+        .picture+.picture{
+            margin-left: 0;
+        }
+    }
+ }
+ @media only screen and (max-width:1000px) {
+    &{
+        max-width: 720px;
+    }
+    .picture+.picture{
+        margin-left: 40px;
+     &:nth-child(3),&:nth-child(5){
+        margin-left: 0;
+     }
+    }
+ }
+ @media only screen and (max-width:720px) {
+   &{
+    width: 680px;
+   }
+    .picture+.picture{
+        margin-left: 0;
+    }
+ }
+ @media only screen and (max-width:670px) {
+    &{
+        width: 340px;
+    }
+    .picture{
+        width:100%;
+    }
+ }
+}
+}
+
+
+img{
+    max-width: 100%;
+}

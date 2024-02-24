@@ -1,0 +1,41 @@
+.person{
+    text-transform: capitalize;
+    display: block;
+  &_box{
+    float: left;
+    width: 340px;
+    text-align: center;
+    
+  &_text{
+    margin: 0;
+  }
+  &_title{
+    margin-bottom: 0;
+  }
+  &_title a{
+    text-decoration: none;
+    color: #333;
+  }
+  &+&{
+    margin-left: 40px;
+   }
+  }
+  .container{
+    @media only screen and (max-width:1100px) {
+        &{
+            width: 1020px;
+         .person_box+.person_box{
+            margin-left: 0;
+         }   
+        }
+    }
+    @media only screen and (max-width:1020px){
+        &{
+            width: 340px;
+         .person_box{
+            margin-bottom: 30px;
+         }
+        }
+    }
+  }
+}

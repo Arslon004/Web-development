@@ -1,0 +1,11 @@
+.narx_part{
+   text-align: center;
+   text-transform: capitalize;
+   & .container_one{
+    display: inline-block;
+    margin: 60px auto;
+   }
+ &_text{
+    font-family: cursive;
+ }
+}

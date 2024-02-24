@@ -1,0 +1,74 @@
+.site_header{
+    @media only screen and (max-width:600px) {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+.sitenav{
+    padding: 20px 0;
+ & h2{
+       margin: 0;
+       float: left;
+   & a{
+    font-size: 2.2rem;
+   }
+    @media only screen and (max-width:780px) {
+      &{
+            float: none;
+            text-align: center;
+            font-size: 3rem;
+        }
+    & a{
+    @media only screen and (max-width:780px) {
+        &{
+            color: violet;
+        }
+    }  
+    }
+    }
+ 
+ }
+ &_ul{
+    float: right;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    margin-top: 7px;
+  @media only screen and (max-width:680px) {
+      &{
+        width: 100%;
+        text-align: center;
+      }
+    }
+    @media only screen and (max-width:780px) {
+        &{
+            float: none;
+            text-align: center;
+        }
+    }
+    
+}
+ &_li{
+    display: inline-block;
+    margin-left: 14px;
+  @media only screen and (max-width:780px) {
+    &{
+        margin-left: 0;
+    }
+  }
+}
+& a{
+    color: #222;
+    text-decoration: none;
+}
+&_link{
+    padding: 10px;
+    font-weight: bold;
+    font-size: 1.3rem;
+    transition: .5s ease all;
+ &:hover{
+    background-color: #00887a;
+    color: #fff;
+ }
+}
+}

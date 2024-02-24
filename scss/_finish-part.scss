@@ -1,0 +1,75 @@
+.finish_part{
+    min-height: 500px;
+    background-image:url(../img/contacts-bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:cover;
+    background-position: center center;
+    text-align: center;
+ & .inner_container{
+    padding: 60px 0;
+    width: 800px;
+    margin: 0 auto;
+   @media only screen and (max-width:1000px) {
+    &{
+        width: 500px; 
+      input{
+        padding: 10px;
+      }   
+    }
+   }
+   @media only screen and (max-width:620px) {
+    &{
+       width: 400px;
+    }
+  }
+ }
+ color: #fff;
+ &_title{
+    text-transform: capitalize;
+    font-size: 1.5rem;
+ }
+ &_text{
+    width: 500px;
+    font-weight: 100;
+    margin: 25px auto 50px;
+    text-align: center;
+    color: rgba(#fff,60%);
+ }
+ & .elektron_manzil{
+    text-transform: capitalize;
+    color: rgba(#fff,50%);
+ }
+ input{
+    padding: 20px;
+    width: 45%;
+    text-transform: uppercase;
+    color: #333;
+    font-weight: bold;
+    font-size: 1.1rem;
+    border-radius: 10px;
+ }
+ input+input{
+    margin-left: 10%;
+ }
+ textarea{
+  resize: none;
+  margin:20px 0;
+  padding: 15px;
+  font-size: 1.3rem;
+  width: 100%;
+  min-height: 90px;
+ }
+ button{
+   padding: 10px 40px;
+   text-transform: uppercase;
+   font-weight: bold;
+   letter-spacing: 2px;
+   transition: .6s ease all;
+ &:hover{
+    background-color: #00887a;
+    color: #fff;
+    transform: translateY(-5px);
+ }
+ }
+}

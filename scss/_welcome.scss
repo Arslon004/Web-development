@@ -1,0 +1,65 @@
+.welcome{
+    position: relative;
+    min-height: 600px;
+    background-image:url(../img/hero-bg.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+  @media only screen and (max-width:600px) {
+    &{
+       margin: 0 auto;
+    }
+  }
+
+ & .welcome_informations{
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    top: 40%;
+    color: #fff;
+  &_title{
+    margin: 0;
+    font-size: 3rem;
+  }
+  &_text{
+    margin: 0;
+    font-size: 1.3rem;
+  }
+  .welcome_links{
+     margin-top: 70px;
+     & a{
+        min-width: 200px;
+     }
+    .button{
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        padding: 15px;
+        font-weight: bold;
+        border: 2px solid transparent;
+        @media only screen and (max-width:720px) {
+            &{
+                display: block;
+            }
+           
+        }
+    }
+    .button+.button{
+        margin-left: 20px;
+    }
+    .button_border{
+     border: 2px solid #fff;
+  }
+  .button_blue{
+    background-color: #00887a;
+    transition: .5s all ease;
+    &:hover{
+        background-color: rgba(#00887a,50% );
+    }
+  }
+  }
+ }
+}
